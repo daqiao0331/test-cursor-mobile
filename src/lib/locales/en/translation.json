@@ -14,7 +14,11 @@
       "cut": "Cut",
       "copy": "Copy",
       "paste": "Paste",
-      "selectAll": "Select All"
+      "selectAll": "Select All",
+      "clear": "Clear",
+      "newGame": "New Game",
+      "newNote": "New Note",
+      "note": "Note"
     },
     "dialog": {
       "save": "Save",

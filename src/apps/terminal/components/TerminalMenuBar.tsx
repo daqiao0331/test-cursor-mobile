@@ -35,7 +35,7 @@ export function TerminalMenuBar({
         </MenubarTrigger>
         <MenubarContent align="start" sideOffset={1} className="px-0">
           <MenubarItem onClick={onClear} className="text-md h-6 px-3">
-            Clear
+            {t("common.menu.clear")}
           </MenubarItem>
           <MenubarSeparator className="h-[2px] bg-black my-1" />
           <MenubarItem onClick={onClose} className="text-md h-6 px-3">

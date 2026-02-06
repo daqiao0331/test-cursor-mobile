@@ -35,7 +35,7 @@ export function MinesweeperMenuBar({
         </MenubarTrigger>
         <MenubarContent align="start" sideOffset={1} className="px-0">
           <MenubarItem onClick={onNewGame} className="text-md h-6 px-3">
-            New Game
+            {t("common.menu.newGame")}
           </MenubarItem>
           <MenubarSeparator className="h-[2px] bg-black my-1" />
           <MenubarItem onClick={onClose} className="text-md h-6 px-3">

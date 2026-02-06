@@ -37,7 +37,7 @@ export function StickiesMenuBar({
         </MenubarTrigger>
         <MenubarContent align="start" sideOffset={1} className="px-0">
           <MenubarItem onClick={onNewNote} className="text-md h-6 px-3">
-            New Note
+            {t("common.menu.newNote")}
           </MenubarItem>
           <MenubarSeparator className="h-[2px] bg-black my-1" />
           <MenubarItem onClick={onClose} className="text-md h-6 px-3">
@@ -47,7 +47,7 @@ export function StickiesMenuBar({
       </MenubarMenu>
       <MenubarMenu>
         <MenubarTrigger className="text-md px-2 py-1 border-none focus-visible:ring-0">
-          Note
+          {t("common.menu.note")}
         </MenubarTrigger>
         <MenubarContent align="start" sideOffset={1} className="px-0">
           <MenubarItem onClick={() => onSetColor("yellow")} className="text-md h-6 px-3">
