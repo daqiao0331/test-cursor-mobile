@@ -1,5 +1,6 @@
 import React from "react";
 import type { AppProps, AnyApp, WindowConstraints } from "@/apps/base/types";
+import { assetPath } from "@/lib/utils";
 import {
   appMetadata as finderMetadata,
   helpItems as finderHelpItems,
@@ -74,7 +75,7 @@ export const appRegistry: Record<string, AnyApp> = {
   finder: {
     id: "finder",
     name: "Finder",
-    icon: { type: "image", src: finderMetadata.icon },
+    icon: { type: "image", src: assetPath(finderMetadata.icon) },
     description: "File manager with Quick Access",
     component: LazyFinderApp as unknown as React.ComponentType<AppProps>,
     helpItems: finderHelpItems,
@@ -87,7 +88,7 @@ export const appRegistry: Record<string, AnyApp> = {
   textedit: {
     id: "textedit",
     name: "TextEdit",
-    icon: { type: "image", src: texteditMetadata.icon },
+    icon: { type: "image", src: assetPath(texteditMetadata.icon) },
     description: "Rich text editor",
     component: LazyTextEditApp as unknown as React.ComponentType<AppProps>,
     helpItems: texteditHelpItems,
@@ -100,7 +101,7 @@ export const appRegistry: Record<string, AnyApp> = {
   minesweeper: {
     id: "minesweeper",
     name: "Minesweeper",
-    icon: { type: "image", src: minesweeperMetadata.icon },
+    icon: { type: "image", src: assetPath(minesweeperMetadata.icon) },
     description: "Classic minesweeper game",
     component: LazyMinesweeperApp as unknown as React.ComponentType<AppProps>,
     helpItems: minesweeperHelpItems,
@@ -113,7 +114,7 @@ export const appRegistry: Record<string, AnyApp> = {
   terminal: {
     id: "terminal",
     name: "Terminal",
-    icon: { type: "image", src: terminalMetadata.icon },
+    icon: { type: "image", src: assetPath(terminalMetadata.icon) },
     description: "Command-line interface",
     component: LazyTerminalApp as unknown as React.ComponentType<AppProps>,
     helpItems: terminalHelpItems,
@@ -126,7 +127,7 @@ export const appRegistry: Record<string, AnyApp> = {
   "control-panels": {
     id: "control-panels",
     name: "Control Panels",
-    icon: { type: "image", src: controlPanelsMetadata.icon },
+    icon: { type: "image", src: assetPath(controlPanelsMetadata.icon) },
     description: "System preferences",
     component:
       LazyControlPanelsApp as unknown as React.ComponentType<AppProps>,
@@ -140,7 +141,7 @@ export const appRegistry: Record<string, AnyApp> = {
   stickies: {
     id: "stickies",
     name: "Stickies",
-    icon: { type: "image", src: stickiesMetadata.icon },
+    icon: { type: "image", src: assetPath(stickiesMetadata.icon) },
     description: "Sticky notes",
     component: LazyStickiesApp as unknown as React.ComponentType<AppProps>,
     helpItems: stickiesHelpItems,

@@ -1,3 +1,5 @@
+import { assetPath } from "@/lib/utils";
+
 interface AboutDialogProps {
   isOpen: boolean;
   onOpenChange: (open: boolean) => void;
@@ -27,7 +29,7 @@ export function AboutDialog({
         onClick={(e) => e.stopPropagation()}
       >
         <img
-          src={metadata.icon}
+          src={assetPath(metadata.icon)}
           alt={metadata.name}
           className="w-16 h-16 mx-auto mb-3"
         />

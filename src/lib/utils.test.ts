@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { cn } from "./utils";
+import { cn, assetPath } from "./utils";
 
 describe("cn utility", () => {
   it("merges class names", () => {
@@ -31,5 +31,22 @@ describe("cn utility", () => {
   it("handles arrays", () => {
     const result = cn(["foo", "bar"]);
     expect(result).toBe("foo bar");
+  });
+});
+
+describe("assetPath utility", () => {
+  it("resolves paths with leading slash", () => {
+    const result = assetPath("/icons/default/finder.png");
+    expect(result).toContain("icons/default/finder.png");
+  });
+
+  it("resolves paths without leading slash", () => {
+    const result = assetPath("icons/default/finder.png");
+    expect(result).toContain("icons/default/finder.png");
+  });
+
+  it("does not duplicate slashes", () => {
+    const result = assetPath("/icons/test.png");
+    expect(result).not.toContain("//icons");
   });
 });

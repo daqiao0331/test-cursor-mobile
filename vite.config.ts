@@ -6,6 +6,7 @@ import path from "node:path";
 
 export default defineConfig({
   plugins: [react(), tailwindcss()],
+  base: "/test-cursor-mobile/",
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
