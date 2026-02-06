@@ -65,6 +65,137 @@
           "description": "Use keyboard shortcuts for faster workflows"
         }
       }
+    },
+    "textedit": {
+      "title": "TextEdit",
+      "name": "TextEdit",
+      "description": "Rich text editor",
+      "menu": {
+        "help": "TextEdit Help",
+        "about": "About TextEdit"
+      },
+      "help": {
+        "editText": {
+          "title": "Edit Text",
+          "description": "Write and edit text documents"
+        },
+        "saveDocuments": {
+          "title": "Save Documents",
+          "description": "Save your work for later"
+        },
+        "copyPaste": {
+          "title": "Copy & Paste",
+          "description": "Use clipboard operations to move text"
+        },
+        "wordCount": {
+          "title": "Word Count",
+          "description": "See word count in the status bar"
+        }
+      }
+    },
+    "minesweeper": {
+      "title": "Minesweeper",
+      "name": "Minesweeper",
+      "description": "Classic minesweeper game",
+      "menu": {
+        "help": "Minesweeper Help",
+        "about": "About Minesweeper"
+      },
+      "help": {
+        "revealCells": {
+          "title": "Reveal Cells",
+          "description": "Left-click to reveal a cell"
+        },
+        "flagMines": {
+          "title": "Flag Mines",
+          "description": "Right-click to flag suspected mines"
+        },
+        "numberClues": {
+          "title": "Number Clues",
+          "description": "Numbers show how many adjacent mines exist"
+        },
+        "winCondition": {
+          "title": "Win Condition",
+          "description": "Reveal all non-mine cells to win"
+        }
+      }
+    },
+    "terminal": {
+      "title": "Terminal",
+      "name": "Terminal",
+      "description": "Command-line interface",
+      "menu": {
+        "help": "Terminal Help",
+        "about": "About Terminal"
+      },
+      "help": {
+        "enterCommands": {
+          "title": "Enter Commands",
+          "description": "Type commands and press Enter to execute"
+        },
+        "availableCommands": {
+          "title": "Available Commands",
+          "description": "Type 'help' to see all available commands"
+        },
+        "clearScreen": {
+          "title": "Clear Screen",
+          "description": "Use 'clear' command to clear the terminal"
+        },
+        "fileSystem": {
+          "title": "File System",
+          "description": "Use 'ls' and 'pwd' to navigate the file system"
+        }
+      }
+    },
+    "control-panels": {
+      "title": "Control Panels",
+      "name": "Control Panels",
+      "description": "System preferences",
+      "menu": {
+        "help": "Control Panels Help",
+        "about": "About Control Panels"
+      },
+      "help": {
+        "changeTheme": {
+          "title": "Change Theme",
+          "description": "Select a theme to change the look and feel"
+        },
+        "themePreview": {
+          "title": "Theme Preview",
+          "description": "Click a theme card to apply it instantly"
+        },
+        "systemSettings": {
+          "title": "System Settings",
+          "description": "Manage your system preferences"
+        }
+      }
+    },
+    "stickies": {
+      "title": "Stickies",
+      "name": "Stickies",
+      "description": "Sticky notes",
+      "menu": {
+        "help": "Stickies Help",
+        "about": "About Stickies"
+      },
+      "help": {
+        "createNotes": {
+          "title": "Create Notes",
+          "description": "Add new sticky notes to keep track of things"
+        },
+        "colorNotes": {
+          "title": "Color Notes",
+          "description": "Change note colors: yellow, pink, blue, or green"
+        },
+        "editNotes": {
+          "title": "Edit Notes",
+          "description": "Click on a note to edit its content"
+        },
+        "deleteNotes": {
+          "title": "Delete Notes",
+          "description": "Remove notes you no longer need"
+        }
+      }
     }
   },
   "desktop": {

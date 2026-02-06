@@ -54,7 +54,7 @@ export function AppManager({ apps }: AppManagerProps) {
               className="flex flex-col items-center gap-1 p-2 rounded hover:bg-white/20 cursor-pointer w-20"
             >
               <span className="text-4xl">
-                {app.id === "finder" ? "📁" : "📱"}
+                {app.id === "finder" ? "📁" : app.id === "textedit" ? "📝" : app.id === "minesweeper" ? "💣" : app.id === "terminal" ? "💻" : app.id === "control-panels" ? "⚙️" : app.id === "stickies" ? "📌" : "📱"}
               </span>
               <span
                 className={cn(
