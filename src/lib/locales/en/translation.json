@@ -1,0 +1,73 @@
+{
+  "common": {
+    "menu": {
+      "file": "File",
+      "edit": "Edit",
+      "view": "View",
+      "help": "Help",
+      "close": "Close",
+      "save": "Save",
+      "newFile": "New File",
+      "open": "Open...",
+      "undo": "Undo",
+      "redo": "Redo",
+      "cut": "Cut",
+      "copy": "Copy",
+      "paste": "Paste",
+      "selectAll": "Select All"
+    },
+    "dialog": {
+      "save": "Save",
+      "cancel": "Cancel",
+      "confirm": "Confirm",
+      "close": "Close",
+      "help": "Help",
+      "about": "About",
+      "delete": "Delete",
+      "ok": "OK"
+    },
+    "system": {
+      "systemRestoring": "System Restoring..."
+    }
+  },
+  "apps": {
+    "finder": {
+      "title": "Finder",
+      "name": "Finder",
+      "description": "File manager with Quick Access",
+      "menu": {
+        "help": "Finder Help",
+        "about": "About Finder"
+      },
+      "help": {
+        "browseNavigate": {
+          "title": "Browse & Navigate",
+          "description": "Navigate through your files and folders"
+        },
+        "quickAccess": {
+          "title": "Quick Access",
+          "description": "Access frequently used locations quickly"
+        },
+        "fileOperations": {
+          "title": "File Operations",
+          "description": "Create, rename, and delete files and folders"
+        },
+        "viewOptions": {
+          "title": "View Options",
+          "description": "Switch between list and grid view"
+        },
+        "search": {
+          "title": "Search",
+          "description": "Search for files by name"
+        },
+        "shortcuts": {
+          "title": "Keyboard Shortcuts",
+          "description": "Use keyboard shortcuts for faster workflows"
+        }
+      }
+    }
+  },
+  "desktop": {
+    "title": "ryOS"
+  }
+}
