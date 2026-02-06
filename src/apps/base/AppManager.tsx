@@ -8,6 +8,15 @@ interface AppManagerProps {
   apps: AnyApp[];
 }
 
+const APP_EMOJI: Record<string, string> = {
+  finder: "📁",
+  textedit: "📝",
+  minesweeper: "💣",
+  terminal: "💻",
+  "control-panels": "⚙️",
+  stickies: "📌",
+};
+
 export function AppManager({ apps }: AppManagerProps) {
   const { openApps, foregroundApp, openApp, closeApp, setForegroundApp } =
     useAppStore();
@@ -54,7 +63,7 @@ export function AppManager({ apps }: AppManagerProps) {
               className="flex flex-col items-center gap-1 p-2 rounded hover:bg-white/20 cursor-pointer w-20"
             >
               <span className="text-4xl">
-                {app.id === "finder" ? "📁" : app.id === "textedit" ? "📝" : app.id === "minesweeper" ? "💣" : app.id === "terminal" ? "💻" : app.id === "control-panels" ? "⚙️" : app.id === "stickies" ? "📌" : "📱"}
+                {APP_EMOJI[app.id] || "📱"}
               </span>
               <span
                 className={cn(
