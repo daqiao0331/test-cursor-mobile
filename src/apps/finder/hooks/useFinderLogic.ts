@@ -5,7 +5,7 @@ import { useThemeStore } from "@/stores/useThemeStore";
 import { helpItems } from "..";
 
 export function useFinderLogic({
-  instanceId: _instanceId,
+  instanceId,
 }: {
   instanceId: string;
   isWindowOpen: boolean;
@@ -30,5 +30,6 @@ export function useFinderLogic({
     setIsAboutDialogOpen,
     currentPath,
     setCurrentPath,
+    instanceId,
   };
 }

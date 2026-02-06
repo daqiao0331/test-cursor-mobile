@@ -10,7 +10,7 @@ export function FinderAppComponent({
   isWindowOpen,
   onClose,
   isForeground,
-  skipInitialSound: _skipInitialSound,
+  skipInitialSound,
   instanceId,
 }: AppProps) {
   const {
@@ -43,6 +43,7 @@ export function FinderAppComponent({
         onClose={onClose}
         isForeground={isForeground}
         appId="finder"
+        skipInitialSound={skipInitialSound}
         instanceId={instanceId}
         menuBar={isXpTheme ? menuBar : undefined}
       >

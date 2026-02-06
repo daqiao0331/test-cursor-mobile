@@ -1,4 +1,4 @@
-import { createContext, useContext } from "react";
+import { createContext } from "react";
 import { useThemeStore, type ThemeId } from "@/stores/useThemeStore";
 
 interface ThemeContextValue {
@@ -6,7 +6,7 @@ interface ThemeContextValue {
   setTheme: (theme: ThemeId) => void;
 }
 
-const ThemeContext = createContext<ThemeContextValue>({
+export const ThemeContext = createContext<ThemeContextValue>({
   osTheme: "system7",
   setTheme: () => {},
 });
@@ -21,6 +21,3 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
   );
 }
 
-export function useTheme() {
-  return useContext(ThemeContext);
-}
