@@ -11,6 +11,7 @@ interface WindowFrameProps {
   instanceId?: string;
   menuBar?: React.ReactNode;
   material?: "default" | "transparent" | "notitlebar";
+  windowSize?: { width: number; height: number };
 }
 
 export function WindowFrame({
@@ -20,6 +21,7 @@ export function WindowFrame({
   children,
   menuBar,
   material = "default",
+  windowSize,
 }: WindowFrameProps) {
   const currentTheme = useThemeStore((state) => state.current);
   const isXpTheme = currentTheme === "xp" || currentTheme === "win98";
@@ -41,7 +43,7 @@ export function WindowFrame({
         currentTheme === "win98" &&
           "border-2 rounded-none border-t-white border-l-white border-b-[#808080] border-r-[#808080]"
       )}
-      style={{ width: 650, height: 475 }}
+      style={{ width: windowSize?.width ?? 650, height: windowSize?.height ?? 475 }}
     >
       {/* Title Bar */}
       {material !== "notitlebar" && (
