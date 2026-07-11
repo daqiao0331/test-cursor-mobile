@@ -1,0 +1,4 @@
+pygame>=2.5
+moderngl>=5.10
+numpy>=1.24
+opencv-python>=4.8  # 可选：播放 videos/ 目录中的 4K 实拍视频，不需要可删除此行
