@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <title>Serene · 静观</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- 双层视频，用于无缝淡入淡出 -->
+  <video id="v0" class="layer" playsinline preload="auto"></video>
+  <video id="v1" class="layer" playsinline preload="auto"></video>
+
+  <!-- 呼吸引导光环（按 B 开启） -->
+  <div id="breath" class="hidden">
+    <div id="breathRing"></div>
+    <div id="breathLabel">吸气</div>
+  </div>
+
+  <!-- 空状态提示 -->
+  <div id="empty" class="hidden">
+    <h1>Serene · 静观</h1>
+    <p>还没有视频源。按 <kbd>M</kbd> 打开菜单，添加本地 4K 风景视频或粘贴视频链接。</p>
+  </div>
+
+  <!-- 左下角当前片名（淡入淡出） -->
+  <div id="nowPlaying"></div>
+
+  <!-- 提示气泡 -->
+  <div id="toast"></div>
+
+  <!-- 右上角菜单按钮（鼠标移动时出现） -->
+  <button id="menuBtn" title="菜单 (M)">☰</button>
+
+  <!-- 菜单：视频源选择 -->
+  <aside id="menu" class="hidden">
+    <header>
+      <h2>视频源</h2>
+      <button id="closeMenu" title="关闭 (Esc)">✕</button>
+    </header>
+
+    <section>
+      <div class="secTitle">
+        <span>播放列表</span>
+        <button id="refreshBtn" class="mini" title="重新扫描 videos/ 文件夹">刷新</button>
+      </div>
+      <ul id="playlist"></ul>
+      <p id="folderHint" class="hint"></p>
+    </section>
+
+    <section>
+      <div class="secTitle"><span>添加视频源</span></div>
+      <div class="row">
+        <button id="addFilesBtn" class="wide">＋ 选择本地视频文件…</button>
+      </div>
+      <div class="row">
+        <input id="urlInput" type="text" placeholder="粘贴视频直链 (https://…/xxx.mp4)" />
+        <button id="addUrlBtn">添加</button>
+      </div>
+      <input id="fileFallback" type="file" accept="video/*" multiple hidden />
+    </section>
+
+    <section>
+      <div class="secTitle"><span>免费 4K 风景素材站</span></div>
+      <ul class="sites">
+        <li><a href="https://www.pexels.com/videos/" data-ext>Pexels Videos</a><span>搜 4K nature / ocean</span></li>
+        <li><a href="https://pixabay.com/videos/" data-ext>Pixabay</a><span>搜 4K landscape</span></li>
+        <li><a href="https://mixkit.co/free-stock-video/nature/" data-ext>Mixkit</a><span>自然分类</span></li>
+        <li><a href="https://coverr.co/" data-ext>Coverr</a><span>搜 calm / sea</span></li>
+      </ul>
+      <p class="hint">下载 2160p 视频后放进程序旁的 videos/ 文件夹，点"刷新"即可。</p>
+    </section>
+
+    <section>
+      <div class="secTitle"><span>快捷键</span></div>
+      <ul class="keys">
+        <li><kbd>M</kbd> 菜单</li>
+        <li><kbd>空格</kbd> 暂停 / 播放</li>
+        <li><kbd>→</kbd> <kbd>←</kbd> 切换视频</li>
+        <li><kbd>L</kbd> 单片循环</li>
+        <li><kbd>S</kbd> 声音开关</li>
+        <li><kbd>B</kbd> 呼吸引导</li>
+        <li><kbd>F</kbd> 全屏</li>
+        <li><kbd>Q</kbd> 退出</li>
+      </ul>
+    </section>
+  </aside>
+
+  <script src="app.js"></script>
+</body>
+</html>

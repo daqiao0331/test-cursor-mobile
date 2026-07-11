@@ -1,7 +1,5 @@
-__pycache__/
-*.pyc
-build/
+node_modules/
 dist/
-*.spec
+out/
 videos/*
 !videos/README.md
